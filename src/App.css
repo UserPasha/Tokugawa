@@ -1,0 +1,35 @@
+.appWrapper {
+    display: grid;
+    width: 100%;
+    margin: 0 auto;
+    background-color: #756666;
+    padding: 20px;
+
+    grid-template-areas:
+"h h"
+"n c";
+    grid-template-rows:60px 1fr;
+    grid-template-columns:2fr 10fr;
+    grid-gap: 10px;
+    /*height: 100px;*/
+}
+
+.header {
+    grid-area: h;
+    display: flex;
+    justify-content: space-between;
+    border: black solid 1px;
+    background-color: rgb(223, 119, 125);
+}
+
+.navbar {
+    grid-area: n;
+    border: black solid 1px;
+    background-color: rgb(223, 119, 125);
+}
+
+.content {
+    grid-area: c;
+    border: black solid 1px;
+    padding: 20px;
+}
