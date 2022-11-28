@@ -1,26 +1,23 @@
 import React from 'react';
 import "./App.css"
-
+import {Navbar} from "./Components/Navbar/Navbar";
+import {Header} from "./Components/Header/Header";
+import {Title} from "./Components/Title/Title";
 
 
 function App() {
-  return (
-      <div className={"appWrapper"}>
-        <div className={"header"}>
-            Blogger Platform
+    return (
+        <div className={"appWrapper"}>
+            <Header/>
+            <Navbar/>
+            <div className={"content"}>
+               <Title text={"Blogs"}/>
+                <div>Search+Filter</div>
+                <div>MappingPosts</div>
+            </div>
         </div>
-        <div className={"navbar"}>
-            <div>Blogs</div>
-            <div>Posts</div>
-        </div>
-        <div className={"content"}>
-            <div>Blogs</div>
-            <div>Search+Filter</div>
-            <div>MappingPosts</div>
-        </div>
-      </div>
 
-  );
+    );
 }
 
 export default App;

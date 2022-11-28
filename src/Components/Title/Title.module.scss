@@ -1,0 +1,13 @@
+@import "src/assets/Common/Styles/mixns";
+@import "src/assets/Common/Styles/variables";
+
+.wrapper{
+  width: 100%;
+  height: 50px;
+  font-family: 'Inter', sans-serif;
+  border-bottom: 1px solid #1A1718;
+
+  .title{
+    @include fontStyle(500, 20px, 24px, $contentColor);
+  }
+}

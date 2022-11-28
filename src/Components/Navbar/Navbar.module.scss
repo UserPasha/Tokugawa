@@ -1,0 +1,29 @@
+@import "src/assets/Common/Styles/mixns";
+@import "src/assets/Common/Styles/variables";
+
+.wrapper{
+  font-family: 'Inter', sans-serif;
+  grid-area: n;
+  border: black solid 1px;
+  background-color: rgb(223, 119, 125);
+  @include displayFlex(flex-start, flex-start);
+  flex-direction: column;
+  padding-top: 50px;
+  padding-left: 65px;
+  min-height: 100vh;
+
+  .item{
+    @include displayFlex(center, flex-start);
+    cursor: pointer;
+    margin-bottom: 30px;
+    width: 100%;
+    height: 35px;
+    border-right: 2px solid transparent;
+
+
+    .title{
+      @include fontStyle(400, 14px, 24px, $contentColor);
+      margin-left: 15px;
+    }
+  }
+}

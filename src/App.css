@@ -1,3 +1,8 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
 .appWrapper {
     display: grid;
     width: 100%;
@@ -14,19 +19,9 @@
     /*height: 100px;*/
 }
 
-.header {
-    grid-area: h;
-    display: flex;
-    justify-content: space-between;
-    border: black solid 1px;
-    background-color: rgb(223, 119, 125);
-}
 
-.navbar {
-    grid-area: n;
-    border: black solid 1px;
-    background-color: rgb(223, 119, 125);
-}
+
+
 
 .content {
     grid-area: c;

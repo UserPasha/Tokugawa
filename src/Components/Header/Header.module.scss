@@ -1,0 +1,15 @@
+@import "src/assets/Common/Styles/mixns";
+@import "src/assets/Common/Styles/variables";
+
+.wrapper {
+  grid-area: h;
+  @include displayFlex(center, flex-start);
+  border: black solid 1px;
+  background-color: rgb(223, 119, 125);
+  font-family: 'Inter', sans-serif;
+
+  .title {
+    @include fontStyle(600, 26px, 36px, $contentColor);
+    padding-left: 65px;
+  }
+}
