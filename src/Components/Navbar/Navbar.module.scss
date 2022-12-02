@@ -4,8 +4,7 @@
 .wrapper{
   font-family: 'Inter', sans-serif;
   grid-area: n;
-  border: black solid 1px;
-  background-color: rgb(223, 119, 125);
+  background-color: $white;
   @include displayFlex(flex-start, flex-start);
   flex-direction: column;
   padding-top: 50px;

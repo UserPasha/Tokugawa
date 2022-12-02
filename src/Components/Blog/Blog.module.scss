@@ -1,0 +1,33 @@
+@import "src/assets/Common/Styles/mixns";
+@import "src/assets/Common/Styles/variables";
+
+.wrapper{
+  @include displayFlex(center, space-between);
+  width: 100%;
+  height: 200px;
+  border-bottom: 1px solid black;
+
+  .imageWrapper{
+    height: 155px;
+    width: 155px;
+    border-radius: 50%;
+    border: 1px solid black;
+  }
+  .content{
+    width: calc(100% - 156px);
+    @include displayFlex(flex-start, center);
+    padding-left: 10px;
+    flex-direction: column;
+
+    .title{
+      @include fontStyle(600, 18px, 24px, $contentColor);
+    }
+    .webSite{
+      @include fontStyle(300, 14px, 24px, $contentColor);
+      margin-bottom: 25px;
+    }
+    .description{
+      @include fontStyle(300, 14px, 24px, $contentColor);
+    }
+  }
+}

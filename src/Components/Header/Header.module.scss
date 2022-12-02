@@ -4,9 +4,10 @@
 .wrapper {
   grid-area: h;
   @include displayFlex(center, flex-start);
-  border: black solid 1px;
-  background-color: rgb(223, 119, 125);
+  background-color: $white;
   font-family: 'Inter', sans-serif;
+  box-shadow: 1px 3px 5px #555;
+  border-bottom: 1px solid black;
 
   .title {
     @include fontStyle(600, 26px, 36px, $contentColor);

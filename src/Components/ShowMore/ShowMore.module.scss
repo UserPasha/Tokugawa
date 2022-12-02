@@ -1,0 +1,23 @@
+@import "src/assets/Common/Styles/mixns";
+@import "src/assets/Common/Styles/variables";
+
+.wrapper{
+  @include displayFlex(center, center);
+  width: 100%;
+  height: 100px;
+
+  .button{
+    width: 150px;
+    height: 50px;
+    @include displayFlex(center, center);
+    border: 1px solid black;
+    cursor: pointer;
+    & img{
+      margin-left: 10px;
+    }
+
+    .title{
+      @include fontStyle(600, 14px, 20px, $contentColor);
+    }
+  }
+}
