@@ -5,6 +5,7 @@ import {Header} from "./Components/Header/Header";
 import {Title} from "./Components/Title/Title";
 import {Blog} from "./Components/Blog/Blog";
 import {ShowMore} from "./Components/ShowMore/ShowMore";
+import {SearchAndFilter} from "./Components/SearchAndFilter/SearchAndFilter";
 
 
 function App() {
@@ -15,8 +16,7 @@ function App() {
             <div className={"content"}>
                 <Title text={"Blogs"}/>
 
-                <div>Search+Filter</div>
-
+                <SearchAndFilter/>
 
                 <Blog/>
                 <Blog/>

@@ -1,0 +1,16 @@
+@import "src/assets/Common/Styles/mixns";
+@import "src/assets/Common/Styles/variables";
+
+.wrapper{
+  @include displayFlex(center, center);
+  width: 30%;
+  height: 80%;
+
+  .select{
+    padding: 10px;
+    width: 100%;
+    height: 100%;
+    background-color: $primary;
+    outline: none;
+  }
+}

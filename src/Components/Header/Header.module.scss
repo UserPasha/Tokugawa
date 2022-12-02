@@ -6,8 +6,8 @@
   @include displayFlex(center, flex-start);
   background-color: $white;
   font-family: 'Inter', sans-serif;
-  box-shadow: 1px 3px 5px #555;
-  border-bottom: 1px solid black;
+  box-shadow: 1px 3px 5px #e1e1e1;
+  //border-bottom: 1px solid black;
 
   .title {
     @include fontStyle(600, 26px, 36px, $contentColor);

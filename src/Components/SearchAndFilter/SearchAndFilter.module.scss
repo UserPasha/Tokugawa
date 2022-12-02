@@ -1,0 +1,8 @@
+@import "src/assets/Common/Styles/mixns";
+@import "src/assets/Common/Styles/variables";
+.wrapper{
+  @include displayFlex(center, space-evenly);
+  width: 100%;
+  height: 60px;
+  margin-top: 20px;
+}

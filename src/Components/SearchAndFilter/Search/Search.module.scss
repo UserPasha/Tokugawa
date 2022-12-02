@@ -1,0 +1,19 @@
+@import "src/assets/Common/Styles/mixns";
+@import "src/assets/Common/Styles/variables";
+
+.wrapper {
+  @include displayFlex(center, center);
+  width: 60%;
+  height: 80%;
+  border: 1px solid $contentColor;
+  padding-left: 10px;
+
+  .input {
+    width: 100%;
+    height: 60%;
+    border: none;
+    padding-left: 10px;
+    background-color: $primary;
+    outline: none;
+  }
+}
